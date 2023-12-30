@@ -54,6 +54,19 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.male {
+  color: #646cff;
+}
+
+.female {
+  color: crimson;
+}
+
+.profilePic {
+  width: 300px;
+  height: 200px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

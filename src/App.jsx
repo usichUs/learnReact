@@ -1,35 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Gallery from "./components/Gallery";
 
-function App() {
-  const [count, setCount] = useState(0)
+const Scientists = [
+  { name: "Taylor M.F.", gender: "m", image: "https://habrastorage.org/r/w780/files/c5f/ecf/619/c5fecf619e034ba8935513d6f131a5c4.jpg" },
+  { name: "Koshi G.F", gender: "f", image:"https://twizz.ru/wp-content/uploads/2023/06/1687159381_8c7dd922ad47494fc02c388e12c00eac.jpg" },
+  { name: "Usachev S.V.", gender: "m", image:"https://sun9-56.userapi.com/impf/c624917/v624917673/43343/LRGjA3-hCkI.jpg?size=1333x750&quality=96&sign=aed1bf348e6b874cd8d20427e85c6672&type=album" },
+];
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+export default function App() {
+  return <Gallery Array={Scientists} />;
 }
-
-export default App
