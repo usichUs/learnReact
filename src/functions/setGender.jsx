@@ -1,3 +1,3 @@
 export function setGender(gender) {
-    return gender == "f" ? "female" : "male";
-  }
+  return gender == "f" ? "female" : "male";
+}
